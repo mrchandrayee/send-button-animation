@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0a0f1a">
+  <!-- Primary SEO -->
+  <title>Send Button Animation | mrchandrayee</title>
+  <meta name="description" content="A satisfying send button with paper-plane launch animation and delivery confirmation. Pure HTML, CSS & JavaScript.">
+  <meta name="author" content="mrchandrayee">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://mrchandrayee.github.io/send-button-animation/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mrchandrayee.github.io/send-button-animation/">
+  <meta property="og:title" content="Send Button Animation | mrchandrayee">
+  <meta property="og:description" content="A satisfying send button with paper-plane launch animation and delivery confirmation. Pure HTML, CSS & JavaScript.">
+  <meta property="og:image" content="https://mrchandrayee.github.io/send-button-animation/preview.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://mrchandrayee.github.io/send-button-animation/">
+  <meta name="twitter:title" content="Send Button Animation | mrchandrayee">
+  <meta name="twitter:description" content="A satisfying send button with paper-plane launch animation and delivery confirmation. Pure HTML, CSS & JavaScript.">
+  <meta name="twitter:image" content="https://mrchandrayee.github.io/send-button-animation/preview.png">
+  <meta name="twitter:creator" content="@mrchandrayee">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Send Button Animation",
+    "description": "A satisfying send button with paper-plane launch animation and delivery confirmation. Pure HTML, CSS & JavaScript.",
+    "url": "https://mrchandrayee.github.io/send-button-animation/",
+    "author": { "@type": "Person", "name": "mrchandrayee", "url": "https://github.com/mrchandrayee" },
+    "applicationCategory": "WebApplication",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+<meta name="theme-color" content="#ece9e2">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="page">
+  <h1>Send Button<br><span>Animation</span></h1>
+  <section class="demo" aria-label="Send and skip button animation">
+    <div class="button-row">
+      <button class="action send" id="sendBtn" type="button" aria-label="Send">
+        <span class="button-content">
+          <svg class="plane send-plane" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 21 3l-7.7 18-2.1-7.2L3 11.5Zm8.2 2.3L21 3"/></svg>
+          <span class="button-label">SEND</span>
+        </span>
+        <span class="success-label">SENT</span>
+      </button>
+      <button class="action skip" id="skipBtn" type="button" aria-label="Skip">
+        <span class="button-content">
+          <svg class="plane skip-plane" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 21 3l-7.7 18-2.1-7.2L3 11.5Zm8.2 2.3L21 3"/></svg>
+          <span class="button-label">SKIP</span>
+        </span>
+        <span class="success-label">OUT</span>
+      </button>
+    </div>
+    <p class="hint" id="hint" aria-live="polite">Choose an action to see the animation.</p>
+    <button class="reset" id="resetBtn" type="button">↻ Reset animation</button>
+  </section>
+  <footer><span class="dot"></span> CODE_AND_CHILL</footer>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
